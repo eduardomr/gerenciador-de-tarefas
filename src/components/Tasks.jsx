@@ -1,6 +1,6 @@
 import React from 'react';
 import Task from './Task.jsx';
-const Tasks =({tasks, handleTaskClick}) =>{
+const Tasks =({tasks, handleTaskClick, handleTaskDeletion}) =>{
     return (
 
         <>
@@ -8,6 +8,7 @@ const Tasks =({tasks, handleTaskClick}) =>{
                     <Task
                         task={task} 
                         handleTaskClick={handleTaskClick}
+                        handleTaskDeletion={handleTaskDeletion}
                     />
                 )
             }
